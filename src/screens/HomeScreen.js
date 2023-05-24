@@ -12,16 +12,13 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.textStyle}>This is the home screen</Text>
-      <Button
-        title="List"
-        style={styles.buttonStyle}
-        onPress={() => navigation.navigate('List')}
-      />
-      <Button
-        title="Images"
-        style={styles.buttonStyle}
-        onPress={() => navigation.navigate('Image')}
-      />
+      <Button title="List" onPress={() => navigation.navigate('List')} />
+      <Button title="Images" onPress={() => navigation.navigate('Image')} />
+      <Button title="Counter" onPress={() => navigation.navigate('Counter')} />
+      <Button title="Color" onPress={() => navigation.navigate('Color')} />
+      <Button title="Square" onPress={() => navigation.navigate('Square')} />
+      <Button title="Text" onPress={() => navigation.navigate('Text')} />
+      <Button title="Laylout" onPress={() => navigation.navigate('Layout')} />
       <TouchableOpacity
         style={styles.componentsButton}
         onPress={() => Linking.openURL('https://baidu.com')}
